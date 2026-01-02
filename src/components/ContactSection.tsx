@@ -27,7 +27,7 @@ const socialLinks = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/smriti-sh/",
   },
   {
     icon: Github,

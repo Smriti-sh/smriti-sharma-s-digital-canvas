@@ -48,7 +48,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex justify-center gap-4 animate-fade-in-up animation-delay-500">
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/smriti-sh/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-xl bg-secondary hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all duration-300 hover:-translate-y-1"
