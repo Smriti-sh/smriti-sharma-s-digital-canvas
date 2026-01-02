@@ -1,4 +1,5 @@
 import { Code2, Brain, Rocket, Heart } from "lucide-react";
+import { useParallax } from "@/hooks/useParallax";
 
 const highlights = [
   {
@@ -24,8 +25,19 @@ const highlights = [
 ];
 
 const AboutSection = () => {
+  const parallax = useParallax(0.1);
+
   return (
-    <section id="about" className="section-padding bg-background">
+    <section id="about" className="section-padding bg-background relative overflow-hidden">
+      {/* Parallax background shapes */}
+      <div 
+        className="absolute -top-20 -left-20 w-72 h-72 bg-primary/5 rounded-full blur-3xl"
+        style={{ transform: `translateY(${parallax}px)` }}
+      />
+      <div 
+        className="absolute -bottom-20 -right-20 w-96 h-96 bg-accent/5 rounded-full blur-3xl"
+        style={{ transform: `translateY(${-parallax * 0.5}px)` }}
+      />
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}

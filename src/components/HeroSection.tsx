@@ -1,12 +1,26 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { useParallax } from "@/hooks/useParallax";
 
 const HeroSection = () => {
+  const parallaxSlow = useParallax(0.3);
+  const parallaxMedium = useParallax(0.5);
+
   return (
     <section className="min-h-screen bg-hero flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Decorative elements */}
-      <div className="absolute top-1/4 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-pulse-soft" />
-      <div className="absolute bottom-1/4 right-10 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-pulse-soft animation-delay-500" />
+      {/* Parallax decorative elements */}
+      <div 
+        className="absolute top-1/4 left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-pulse-soft" 
+        style={{ transform: `translateY(${parallaxSlow}px)` }}
+      />
+      <div 
+        className="absolute bottom-1/4 right-10 w-80 h-80 bg-accent/5 rounded-full blur-3xl animate-pulse-soft animation-delay-500" 
+        style={{ transform: `translateY(${parallaxMedium}px)` }}
+      />
+      <div 
+        className="absolute top-1/3 right-1/4 w-40 h-40 bg-primary/3 rounded-full blur-2xl" 
+        style={{ transform: `translateY(${parallaxSlow * 0.7}px)` }}
+      />
       
       <div className="section-container relative z-10">
         <div className="max-w-3xl mx-auto text-center">

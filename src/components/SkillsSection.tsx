@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { useParallax } from "@/hooks/useParallax";
 
 const skills = [
   { name: "JavaScript", category: "core" },
@@ -20,8 +21,19 @@ const skills = [
 ];
 
 const SkillsSection = () => {
+  const parallax = useParallax(0.15);
+
   return (
-    <section id="skills" className="section-padding bg-secondary/30">
+    <section id="skills" className="section-padding bg-secondary/30 relative overflow-hidden">
+      {/* Parallax background shapes */}
+      <div 
+        className="absolute top-10 right-10 w-48 h-48 bg-primary/5 rounded-full blur-2xl"
+        style={{ transform: `translateY(${parallax}px)` }}
+      />
+      <div 
+        className="absolute bottom-10 left-10 w-64 h-64 bg-accent/5 rounded-full blur-2xl"
+        style={{ transform: `translateY(${-parallax * 0.8}px)` }}
+      />
       <div className="section-container">
         <div className="max-w-4xl mx-auto">
           {/* Section Header */}
