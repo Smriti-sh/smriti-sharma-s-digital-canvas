@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Sparkles, Layout, Database } from "lucide-react";
+import { useParallax } from "@/hooks/useParallax";
 
 const projects = [
   {
@@ -31,8 +32,19 @@ const projects = [
 ];
 
 const ProjectsSection = () => {
+  const parallax = useParallax(0.12);
+
   return (
-    <section id="projects" className="section-padding bg-secondary/30">
+    <section id="projects" className="section-padding bg-secondary/30 relative overflow-hidden">
+      {/* Parallax background shapes */}
+      <div 
+        className="absolute -top-10 left-1/4 w-56 h-56 bg-primary/5 rounded-full blur-3xl"
+        style={{ transform: `translateY(${parallax}px)` }}
+      />
+      <div 
+        className="absolute bottom-20 right-10 w-72 h-72 bg-accent/5 rounded-full blur-3xl"
+        style={{ transform: `translateY(${-parallax * 0.6}px)` }}
+      />
       <div className="section-container">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
