@@ -57,7 +57,7 @@ const HeroSection = () => {
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Smriti-sh"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-xl bg-secondary hover:bg-primary/10 text-muted-foreground hover:text-primary transition-all duration-300 hover:-translate-y-1"
