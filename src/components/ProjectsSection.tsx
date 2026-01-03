@@ -14,6 +14,14 @@ const projects = [
     featured: true,
   },
   {
+    title: "Personal Portfolio",
+    description:
+      "A modern, responsive portfolio website featuring dark/light theme toggle, parallax scrolling effects, and smooth animations. Built with a focus on clean design and user experience.",
+    icon: Layout,
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+    featured: true,
+  },
+  {
     title: "MERN Full-Stack App",
     description:
       "A complete full-stack application demonstrating proficiency in MongoDB, Express, React, and Node.js. Features user authentication, CRUD operations, and responsive design.",
