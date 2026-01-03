@@ -20,6 +20,8 @@ const projects = [
     icon: Layout,
     technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
     featured: true,
+    demoLink: "https://my-portfolio-2026-eight.vercel.app/",
+    githubLink: "https://github.com/Smriti-sh/smriti-sharma-s-digital-canvas",
   },
   {
     title: "MERN Full-Stack App",
@@ -114,16 +116,45 @@ const ProjectsSection = () => {
                     </div>
                   </div>
 
-                  {/* Actions */}
                   <div className="p-4 pt-0 border-t border-border mt-2">
                     <div className="flex gap-2">
-                      <Button variant="ghost" size="sm" className="flex-1 text-xs" disabled>
-                        <Github className="w-3.5 h-3.5 mr-1.5" />
-                        Code
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        className="flex-1 text-xs" 
+                        disabled={!project.githubLink}
+                        asChild={!!project.githubLink}
+                      >
+                        {project.githubLink ? (
+                          <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                            <Github className="w-3.5 h-3.5 mr-1.5" />
+                            Code
+                          </a>
+                        ) : (
+                          <>
+                            <Github className="w-3.5 h-3.5 mr-1.5" />
+                            Code
+                          </>
+                        )}
                       </Button>
-                      <Button variant="ghost" size="sm" className="flex-1 text-xs" disabled>
-                        <ExternalLink className="w-3.5 h-3.5 mr-1.5" />
-                        Demo
+                      <Button 
+                        variant="ghost" 
+                        size="sm" 
+                        className="flex-1 text-xs" 
+                        disabled={!project.demoLink}
+                        asChild={!!project.demoLink}
+                      >
+                        {project.demoLink ? (
+                          <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                            <ExternalLink className="w-3.5 h-3.5 mr-1.5" />
+                            Demo
+                          </a>
+                        ) : (
+                          <>
+                            <ExternalLink className="w-3.5 h-3.5 mr-1.5" />
+                            Demo
+                          </>
+                        )}
                       </Button>
                     </div>
                   </div>
