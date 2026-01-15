@@ -130,25 +130,19 @@ const ProjectsSection = () => {
                           </>
                         )}
                       </Button>
-                      <Button 
-                        variant="ghost" 
-                        size="sm" 
-                        className="flex-1 text-xs" 
-                        disabled={!project.demoLink}
-                        asChild={!!project.demoLink}
-                      >
-                        {project.demoLink ? (
+                      {project.demoLink && (
+                        <Button 
+                          variant="ghost" 
+                          size="sm" 
+                          className="flex-1 text-xs" 
+                          asChild
+                        >
                           <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
                             <ExternalLink className="w-3.5 h-3.5 mr-1.5" />
                             Demo
                           </a>
-                        ) : (
-                          <>
-                            <ExternalLink className="w-3.5 h-3.5 mr-1.5" />
-                            Demo
-                          </>
-                        )}
-                      </Button>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </CardContent>
