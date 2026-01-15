@@ -24,19 +24,11 @@ const projects = [
     githubLink: "https://github.com/Smriti-sh/smriti-sharma-s-digital-canvas",
   },
   {
-    title: "MERN Full-Stack App",
+    title: "MERN Stack Project: Video Calling Realtime Chat App & Social App",
     description:
       "A complete full-stack application demonstrating proficiency in MongoDB, Express, React, and Node.js. Features user authentication, CRUD operations, and responsive design.",
     icon: Layout,
     technologies: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
-    featured: false,
-  },
-  {
-    title: "RESTful API Service",
-    description:
-      "A robust API service built with Node.js and Express, featuring proper error handling, validation, and integration with NoSQL databases for scalable data management.",
-    icon: Database,
-    technologies: ["Node.js", "Express", "MongoDB", "REST API", "JWT"],
     featured: false,
   },
 ];
