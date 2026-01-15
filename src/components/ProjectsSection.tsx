@@ -12,6 +12,7 @@ const projects = [
     icon: Sparkles,
     technologies: ["OpenAI", "Weaviate", "Node.js", "Express", "MEAN Stack"],
     featured: true,
+    githubLink: "https://github.com/Smriti-sh/LMS-Project",
   },
   {
     title: "Personal Portfolio",
