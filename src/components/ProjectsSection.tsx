@@ -26,9 +26,9 @@ const projects = [
   {
     title: "MERN Stack Project: Video Calling Realtime Chat App & Social App",
     description:
-      "A complete full-stack application demonstrating proficiency in MongoDB, Express, React, and Node.js. Features user authentication, CRUD operations, and responsive design.",
+      "Built a full-stack social application with real-time chat and video calling. Features JWT-based authentication, onboarding flow, friend requests, and notifications. Integrated Stream API for messaging and TanStack React Query for efficient server-state management.",
     icon: Layout,
-    technologies: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
+    technologies: ["MongoDB", "Express", "React", "Node.js", "Stream API", "TanStack Query"],
     featured: false,
   },
 ];
