@@ -63,28 +63,6 @@ const SkillsSection = () => {
             ))}
           </div>
 
-          {/* Languages */}
-          <div className="mt-16 text-center">
-            <h3 className="text-lg font-display font-semibold text-foreground mb-6">
-              Languages I Speak
-            </h3>
-            <div className="flex justify-center gap-6">
-              <div className="flex items-center gap-3 px-6 py-3 rounded-xl bg-background border border-border">
-                <span className="text-2xl">🇬🇧</span>
-                <div className="text-left">
-                  <p className="font-medium text-foreground">English</p>
-                  <p className="text-xs text-muted-foreground">Bilingual Proficiency</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 px-6 py-3 rounded-xl bg-background border border-border">
-                <span className="text-2xl">🇮🇳</span>
-                <div className="text-left">
-                  <p className="font-medium text-foreground">Hindi</p>
-                  <p className="text-xs text-muted-foreground">Advanced (C2)</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
