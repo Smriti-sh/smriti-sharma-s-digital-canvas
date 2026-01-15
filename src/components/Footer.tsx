@@ -20,12 +20,8 @@ const Footer = () => {
           <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent mx-auto rounded-full mb-8" />
 
           {/* Copyright */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-sm text-muted-foreground">
+          <div className="text-sm text-muted-foreground">
             <span>© {currentYear} Smriti Sharma. All rights reserved.</span>
-            <span className="hidden sm:inline">•</span>
-            <span className="flex items-center gap-1">
-              Made with <Heart className="w-4 h-4 text-primary fill-primary" /> in Udaipur
-            </span>
           </div>
         </div>
       </div>
