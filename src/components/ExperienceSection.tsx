@@ -6,7 +6,7 @@ const experience = {
   title: "Web Developer Intern",
   company: "Secure Learning",
   period: "2024",
-  location: "Remote",
+  location: "On-site",
   highlights: [
     "Built and integrated an AI Question Generator using OpenAI APIs",
     "Implemented a vector database (Weaviate) for AI-driven content retrieval",
