@@ -17,7 +17,6 @@ const skills = [
   { name: "Git", category: "tools" },
   { name: "GitHub", category: "tools" },
   { name: "REST APIs", category: "tools" },
-  { name: "Analytical Thinking", category: "soft" },
 ];
 
 const SkillsSection = () => {
